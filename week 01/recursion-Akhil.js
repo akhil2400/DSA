@@ -125,29 +125,114 @@
 // console.log(res)
 
 
-function reverseString(str) {
-  if (str.length <= 1) {
-    return str;
-  }
+// function reverseString(str) {
+//   if (str.length <= 1) {
+//     return str;
+//   }
 
-  console.log(str)
-  return reverseString(str.slice(1)) + str[0];
+//   console.log(str)
+//   return reverseString(str.slice(1)) + str[0];
 
-}
+// }
 
-function reverseWordInString(sentences) {
-  const words = sentences.split(' ');
-  const reversedWords = words.map(word => reverseString(word));
-  return reversedWords.join(' ')
+// function reverseWordInString(sentences) {
+//   const words = sentences.split(' ');
+//   const reversedWords = words.map(word => reverseString(word));
+//   return reversedWords.join(' ')
 
-}
+// }
 
-const text = "Hello world";
-const result = reverseWordInString(text);
-console.log(result)
-
-
+// const text = "Hello world";
+// const result = reverseWordInString(text);
+// console.log(result)
 
 
+// function isPrime(num,divisor = 2){
+//   if(num <= 1) return false;
+
+//   if(divisor*divisor > num) return true;
+
+//   if(num % divisor === 0) return false;
+
+//   return isPrime(num,divisor + 1);
+// }
+
+// console.log(isPrime(11))
+// console.log(isPrime(8))
+
+
+// function isPrime(num, divisor = 2){
+//   if(num<=1) return false;
+
+//   if(divisor*divisor>num) return true;
+
+//   if(num % divisor ===0) return false
+
+//   return isPrime(num,divisor + 1)
+
+// }
+
+// console.log(isPrime(9))
+
+
+//sum of an array 
+// function sumofArr(arr){
+//   if(arr.length === 0) return 0;
+//   return arr[0]+sumofArr(arr.slice(1));
+// }
+// const numbers = [1,2,3,4,5,6];
+// console.log(sumofArr(numbers));
+
+//patter
+
+// function printPattern(n,current=1,addend = 1){
+//   if(current>n)return
+//   const sum = current + addend;
+//   console.log(`${current} + ${addend} = ${sum}`);
+//   printPattern(n, current+1 , addend*2)
+// }
+// printPattern(6)
+
+
+// function countDown(n,sub = 0,step = 1){
+//   if(n <= 0) return;
+// console.log(`${n}`);
+// countDown(n - step,sub + 1,step + 1 );
+// }
+
+// let num = 100
+// countDown(num)
+
+
+// function removel(str){
+//   if(str.length === 0) return ""
+
+//   if(str[0].toLowerCase() === 'l') return removel(str.slice(1))
+
+//     return str[0]+removel(str.slice(1))
+// }
+
+// let str = 'Hello World'
+
+// let res = removel(str);
+
+// console.log(res);
+
+
+// function thirdLargest(arr){
+//   let nums = [...new Set(arr)].sort((a,b)=>b-a);
+//  return nums.length >= 3?nums[2]:null
+// }
+// let arr = [1,2,3,4,5]
+// console.log(thirdLargest(arr));
+
+
+// function sumarr(arr){
+//   if(arr.length <=0) return 0;
+
+//   return arr[0]+sumarr(arr.slice(1));
+// }
+
+// console.log(sumarr([1,2,3,4,5,6]))
 
 
