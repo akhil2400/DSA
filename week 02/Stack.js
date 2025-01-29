@@ -54,7 +54,7 @@ const Stack = new stack();
 
 Stack.push(10)
 Stack.push(20)
-Stack.push(40)
+Stack.push(40)git status
 
 
 
@@ -66,9 +66,9 @@ console.log(Stack.size());
 
 Stack.printStack()
 
-console.log(Stack.pop());
 
 console.log("After pop");
+console.log(Stack.pop());
 
 Stack.printStack()
 
