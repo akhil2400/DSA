@@ -73,9 +73,8 @@ const myHashTable = new HashTable(10);
 
 myHashTable.set("name :", "Akhil")
 myHashTable.set("age :", 21)
+myHashTable.remove("name :")
 
 console.log(myHashTable.get("name :"));
 
-
-console.log("HASH TABLE");
 myHashTable.display();

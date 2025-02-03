@@ -1,20 +1,20 @@
-// function insertionSort(arr){
-//   let n = arr.length;
-//   for(let i = 1 ; i<n; i++){
-//     let temp = arr[i];
-//     let j = i-1;
+function insertionSort(arr){
+  let n = arr.length;
+  for(let i = 1 ; i<n; i++){
+    let temp = arr[i];
+    let j = i-1;
 
-//     while(j>0 && arr[j]>temp){
-//       arr[j+1]=arr[j];
-//       j--;
-//     }
-//     arr[j+1] = temp;
-//   }
-//   return arr;
-// }
+    while(j>0 && arr[j]>temp){
+      arr[j+1]=arr[j];
+      j--;
+    }
+    arr[j+1] = temp;
+  }
+  return arr;
+}
 
-// const arr = [1,4,3,2,55,45,3,22,77];
-// console.log(insertionSort(arr));
+const arr = [1,4,3,2,55,45,3,22,77];
+console.log(insertionSort(arr));
 
 
 // function insertionSort(arr) {
@@ -37,7 +37,7 @@
 
 //------------------------------------------------
 
-//Sort an array of floating-point numbers.
+// Sort an array of floating-point numbers.
 
 
 // function insertionSort(arr) {
@@ -62,7 +62,7 @@
 
 
 //-------------------------------------------
-//Sort an array in descending order.
+// Sort an array in descending order.
 
 // function insertionSort(arr) {
 //   let n = arr.length
@@ -105,7 +105,7 @@
 
 //----------------------------------------------
 
-//Insert an element into a sorted array.
+// Insert an element into a sorted array.
 
 // function insertionSort(arr,k){
 //   arr.push(k);
