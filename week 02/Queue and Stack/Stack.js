@@ -224,7 +224,7 @@
 // // function reverse(str) {
 // //   let stack = new Stack()
 // //   for (let char of str) {
-// //     stack.push(char)
+// //     stack.push(char)s
 // //   }
 // //   let rev = ""
 // //   while (!stack.isEmpty()) {

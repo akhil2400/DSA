@@ -1,27 +1,27 @@
 // /*================Quick Sort=====================*/
 
-function quicksort(arr){
-  if(arr.length <= 1){
-    return arr
-  }
+// function quicksort(arr){
+//   if(arr.length <= 1){
+//     return arr
+//   }
 
-  let pivot = arr[0];
-  let left =[];
-  let right = [];
+//   let pivot = arr[0];
+//   let left =[];
+//   let right = [];
 
-  for(let i = 1; i<arr.length ; i++){
-    if(arr[i]<pivot){
-      left.push(arr[i]);
-    }else{
-      right.push(arr[i]);
-    }
-  }
+//   for(let i = 1; i<arr.length ; i++){
+//     if(arr[i]<pivot){
+//       left.push(arr[i]);
+//     }else{
+//       right.push(arr[i]);
+//     }
+//   }
 
-  return [...quicksort(left),pivot,...quicksort(right)];
-}
+//   return [...quicksort(left),pivot,...quicksort(right)];
+// }
 
-const arr = [1,22,42,53,23,656,2,0];
-console.log(quicksort(arr));
+// const arr = [1,22,42,53,23,656,2,0];
+// console.log(quicksort(arr));
 
 
 // function quicksort(arr){
@@ -154,6 +154,35 @@ console.log(quicksort(arr));
 // const pivotIndex = partition(arr, 0, arr.length - 1);
 // console.log("Partitioned array:", arr);
 // console.log("Pivot index:", pivotIndex);
+
+
+
+function Quicksort(arr) {
+  let n = arr.length;
+  if (arr.length <= 0) return arr;
+  
+
+  let pivot = arr[0], left = [], right = [];
+
+  for (let i = 1; i < n; i++) {
+    arr[i] < pivot ? left.push(arr[i]) : right.push(arr[i])
+  }
+
+  return [...Quicksort(left), pivot, ...Quicksort(right)]
+}
+
+function kth(arr, k) {
+  let sortted = Quicksort(arr);
+  console.log(sortted)
+  if (k <= 0) return "no such element in this index"
+  else if(k = 1) return sortted[0]
+  return sortted[k - 1]
+}
+
+let arr = [1, 4, 2, 7, 5, 8, 0];
+let k = 1
+
+console.log(kth(arr, k));
 
 
 

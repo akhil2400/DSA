@@ -1,17 +1,17 @@
-function bubblesort(arr) {
-  let n = arr.length;
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
-      }
-    }
-  }
-  return arr;
-}
+// function bubblesort(arr) {
+//   let n = arr.length;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < n; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+//       }
+//     }
+//   }
+//   return arr;
+// }
 
-const arr = [ 0,  1,  5,  6, 12, 22, 33, 44];
-console.log(bubblesort(arr))
+// const arr = [ 0,  1,  5,  6, 12, 22, 33, 44];
+// console.log(bubblesort(arr))
 
 // function bubblesort(arr) {
 //   let n = arr.length
@@ -94,6 +94,66 @@ console.log(bubblesort(arr))
 // let arr = ["h","i","f","g","d","e","b","a","c"]
 // console.log(bubblesort(arr))
 
+//================================================
 
+//Sort array of string alphabetically
+
+// function bubblesort(arr){
+//     let n = arr.length;
+//     for(let i = 0 ; i<n;i++){
+//         for(let j = 0 ; j<n-1 ; j++){
+//             if(arr[j]>arr[j+1]){
+//                 [arr[j],arr[j+1]]=[arr[j+1],arr[j]];
+//             }
+//         }
+//     }
+//     return arr
+// }
+
+// console.log(bubblesort([1,23,3,55,66,0]))
+
+// function bubblesort(arr){
+//     let n= arr.length;
+//     for(let i = 0 ; i<n ; i++){
+//         for(let j = 0 ; j<n-1; j++){
+//             if(arr[j]<arr[j+1]){
+//                 [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(bubblesort([1,23,3,55,66,0]))
+
+
+// function bubblesort(arr, order) {
+
+//   let n = arr.length;
+  
+//   if(n===0) return "array is empty.."
+  
+
+//   for (let i = 0; i < n; i++) {
+//       for (let j = 0; j < n - 1; j++) {
+//           if (order === "asc") {
+//               if (arr[j] > arr[j + 1]) {
+//                   [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//               }
+//           } else if (order === "dsc") {
+//               if (arr[j] < arr[j + 1]) {
+//                   [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//               }
+//           }else{
+//               return "order must be given"
+//           }
+//       }
+//   }
+//   return arr.join(","); 
+// }
+
+// let str = ["Akhil","Hemdan"];
+// console.log(bubblesort(str,"asc" )); 
+// console.log(bubblesort(str, "dsc")); 
 
 
