@@ -157,32 +157,32 @@
 
 
 
-function Quicksort(arr) {
-  let n = arr.length;
-  if (arr.length <= 0) return arr;
+// function Quicksort(arr) {
+//   let n = arr.length;
+//   if (arr.length <= 0) return arr;
   
 
-  let pivot = arr[0], left = [], right = [];
+//   let pivot = arr[0], left = [], right = [];
 
-  for (let i = 1; i < n; i++) {
-    arr[i] < pivot ? left.push(arr[i]) : right.push(arr[i])
-  }
+//   for (let i = 1; i < n; i++) {
+//     arr[i] < pivot ? left.push(arr[i]) : right.push(arr[i])
+//   }
 
-  return [...Quicksort(left), pivot, ...Quicksort(right)]
-}
+//   return [...Quicksort(left), pivot, ...Quicksort(right)]
+// }
 
-function kth(arr, k) {
-  let sortted = Quicksort(arr);
-  console.log(sortted)
-  if (k <= 0) return "no such element in this index"
-  else if(k = 1) return sortted[0]
-  return sortted[k - 1]
-}
+// function kth(arr, k) {
+//   let sortted = Quicksort(arr);
+//   console.log(sortted)
+//   if (k <= 0) return "no such element in this index"
+//   else if(k = 1) return sortted[0]
+//   return sortted[k - 1]
+// }
 
-let arr = [1, 4, 2, 7, 5, 8, 0];
-let k = 1
+// let arr = [1, 4, 2, 7, 5, 8, 0];
+// let k = 1
 
-console.log(kth(arr, k));
+// console.log(kth(arr, k));
 
 
 
