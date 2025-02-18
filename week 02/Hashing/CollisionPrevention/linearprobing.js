@@ -44,8 +44,7 @@ class HashTable {
   }
 
   remove(key) {
-    let index = this._hash(key)
-    ;
+    let index = this._hash(key);
     while (this.table[index] !== undefined) {
       if (this.table[index] !== "DELETED" && this.table[index][0] === key) {
         this.table[index] = "DELETED"

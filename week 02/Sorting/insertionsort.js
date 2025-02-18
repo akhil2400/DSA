@@ -156,7 +156,7 @@
 
 //------------------------------------------
 
-//Insert an ellement to a sorted array;
+//Insert an element to a sorted array;
 //---------------------------------------
 
 // function insertionSort(arr,val){

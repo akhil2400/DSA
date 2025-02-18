@@ -260,7 +260,6 @@ using an Array-Based stack;
 //     }
 //     while (this.s1.length > 1) {
 //       this.s2.push(this.s1.pop())
-      
 //     }
 //     let dequeued = this.s1.pop()
 
@@ -291,3 +290,12 @@ using an Array-Based stack;
 
 
 
+
+
+
+// Queue using stack
+// Insertion sort
+// Reverse using stack
+// Merge sort
+// Rehashing
+// Hashing using any resolution methods

@@ -185,6 +185,34 @@
 // console.log(kth(arr, k));
 
 
+function QuickSort (arr,low=0,high=arr.length-1){
+  if(low < high){
+      let loc = partition(arr,low,high)
+      QuickSort(arr,low,loc-1);
+      QuickSort(arr,loc+1,high);
+  }
+  return arr;
+}
+
+function partition(arr,low,high){
+  let pivot = arr[low],start = low,end = high;
+  
+  while(start < end){
+      while(start<=high && arr[start]<=pivot) start++;
+      while(end>low && arr[end]>pivot) end--;
+      
+      if(start<end){
+          [arr[start],arr[end]] = [arr[end],arr[start]];
+      }
+  }
+  [arr[low],arr[end]]=[arr[end],arr[low]];
+  return end;
+}
+
+let arr=[22,3,3,0,88,88,67,5,88,3];
+console.log(QuickSort(arr))
+
+
 
 
 

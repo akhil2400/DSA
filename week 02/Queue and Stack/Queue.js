@@ -204,7 +204,7 @@
 // console.log(myQueue.top());
 
 
-//second largest using Queue
+//second smallest using Queue
 
 // class Queue{
 //   constructor(){

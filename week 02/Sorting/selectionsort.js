@@ -83,3 +83,58 @@
 
 // let arr = [1,-10,19,5,4,99,0]
 // console.log(selectionSort(arr));
+
+
+// class Stack{
+//   constructor(){
+//       this.stack = [];
+//   }
+  
+//   push(elem){
+//       this.stack.push(elem);
+//   }
+  
+//   pop(){
+      
+//       if(this.isEmpty())return "This Stack is empty"
+      
+//       return this.stack.pop();
+//   }
+  
+//   peek(){
+//     if(this.isEmpty())return "This Stack is empty"
+    
+//     return this.stack[this.stack.length-1]
+
+//   }
+//   isEmpty(){
+//       return this.stack.length === 0
+//   }
+  
+//   print(){
+//       console.log(this.stack.slice().join(","))
+//   }
+// }
+
+// function reverse(nums){
+//   let stack = new Stack()
+//   let str = nums.toString()
+  
+//   for(let x of str){
+//       stack.push(x)
+//   }
+  
+//   let rev = ""
+  
+//   while(!stack.isEmpty()){
+//       rev += stack.pop()
+      
+//   }
+  
+
+//  return parseInt(rev) * Math.sign(nums)
+// }
+
+// let nums = 1234
+
+// console.log(reverse(nums))
